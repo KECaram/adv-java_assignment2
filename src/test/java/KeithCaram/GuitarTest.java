@@ -16,39 +16,40 @@ public class GuitarTest {
      */
     @Test
     public void createClassical(){
-        //test that string type is correct
-        assertEquals(classical.getModel().getGuitarStringType(), TypeOfStrings.NYLON);
-        //test that guitar type is correct
-        assertEquals(classical.getModel().getType(), GuitarType.ACOUSTIC);
-        //test that passed finish is correct
-        assertEquals(classical.getFinish(), FinishColor.SUNBURST);
-        //test that our guitar plays the correct song
-        assertEquals(classical.getGenre().playSong(),
+        assertEquals("Test that string type is correct",
+                classical.getModel().getGuitarStringType(), TypeOfStrings.NYLON);
+        assertEquals("Test that guitar type is correct",
+                classical.getModel().getType(), GuitarType.ACOUSTIC);
+        assertEquals("Test that finish is correct",
+                classical.getFinish(), FinishColor.SUNBURST);
+        assertEquals("Test that guitar plays correct song",
+                classical.getGenre().playSong(),
                 "Play: Moonlight Sonata by Ludwig von Beethoven");
     }
 
     @Test
     public void createElectric(){
-        //test that string type is correct
-        assertEquals(electric.getModel().getGuitarStringType(), TypeOfStrings.STEEL);
-        //test that guitar type is correct
-        assertEquals(electric.getModel().getType(), GuitarType.ELECTRIC);
-        //test that passed finish is correct
-        assertEquals(electric.getFinish(), FinishColor.BLACK);
-        //test that our guitar plays the correct song
-        assertEquals(electric.getGenre().playSong(), "Play: Free Bird by Lynyrd Skynyrd");
+        assertEquals("Test that string type is correct",
+                electric.getModel().getGuitarStringType(), TypeOfStrings.STEEL);
+        assertEquals("Test that guitar type is correct",
+                electric.getModel().getType(), GuitarType.ELECTRIC);
+        assertEquals("Test that finish is correct",
+                electric.getFinish(), FinishColor.BLACK);
+        assertEquals("Test that guitar plays correct song",
+                electric.getGenre().playSong(),
+                "Play: Free Bird by Lynyrd Skynyrd");
     };
 
     @Test
     public void createAcoustic(){
-        //test that string type is correct
-        assertEquals(acoustic.getModel().getGuitarStringType(), TypeOfStrings.STEEL);
-        //test that guitar type is correct
-        assertEquals(acoustic.getModel().getType(), GuitarType.ACOUSTIC);
-        //test that passed finish is correct
-        assertEquals(acoustic.getFinish(), FinishColor.WOOD);
-        //test that our guitar plays the correct song
-        assertEquals(acoustic.getGenre().playSong(),
+        assertEquals("Test that string type is correct",
+                acoustic.getModel().getGuitarStringType(), TypeOfStrings.STEEL);
+        assertEquals("Test that guitar type is correct",
+                acoustic.getModel().getType(), GuitarType.ACOUSTIC);
+        assertEquals("Test that finish is correct",
+                acoustic.getFinish(), FinishColor.WOOD);
+        assertEquals("Test that guitar plays correct song",
+                acoustic.getGenre().playSong(),
                 "Play: Take Me Home, Country Roads by John Denver");
     }
 }
